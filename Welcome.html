@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono Code LLC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .app-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .app {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+            text-align: center;
+        }
+        .app h3 {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media(max-width: 768px) {
+            .app {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media(max-width: 480px) {
+            .app {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chrono Code LLC</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#apps">Our Apps</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Chrono Code LLC</h2>
+    <p>Chrono Code LLC is a software development company focused on creating innovative iPhone applications that enhance productivity and enrich lives. Our applications are designed to meet the needs of everyday users, offering intuitive designs and powerful functionality. Our current portfolio includes financial planning, healthcare, and productivity tools.</p>
+</section>
+
+<section id="apps">
+    <h2>Our Apps</h2>
+    <div class="app-list">
+        <div class="app">
+            <h3>Plan to Retire</h3>
+            <p>Plan your financial future with ease. This app calculates the return on investment for your retirement savings based on contribution rates and returns over time.</p>
+        </div>
+        <div class="app">
+            <h3>Clear Costs</h3>
+            <p>Track and manage your expenses efficiently with Clear Costs. Gain insights into your spending and optimize your budget for better financial health.</p>
+        </div>
+        <div class="app">
+            <h3>Watch Fido</h3>
+            <p>Keep track of your pet's health and well-being with Watch Fido. Manage appointments, medications, vaccinations, and more, all from your phone.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like more information about our products, feel free to contact us at:</p>
+    <p><strong>Email:</strong> <a href="mailto:chronocodedevelopment@outlook.com">chronocodedevelopment@outlook.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Chrono Code LLC</p>
+</footer>
+
+</body>
+</html>
