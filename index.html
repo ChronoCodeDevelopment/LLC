@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chrono Code LLC</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f4f5;
+            color: #333;
         }
         header {
-            background-color: #0066cc;
+            background: linear-gradient(135deg, #006666, #00cc99);
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -20,10 +23,12 @@
         header h1 {
             margin: 0;
             font-size: 2.5rem;
+            font-weight: 700;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin-top: 10px;
         }
         nav ul li {
             display: inline;
@@ -32,55 +37,100 @@
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         section {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
         }
         h2 {
-            color: #333;
+            color: #006666;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
         }
         .app-list {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
         .app {
             background-color: #fff;
             border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex: 1 1 calc(33.333% - 40px);
-            max-width: calc(33.333% - 40px);
-            text-align: center;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 40px);
+            max-width: calc(30% - 40px);
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .app:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
         }
         .app h3 {
-            color: #0066cc;
-            margin-bottom: 10px;
+            color: #006666;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+        .app img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .app p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .app ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
         footer {
             text-align: center;
-            background-color: #0066cc;
+            background-color: #006666;
             color: #fff;
-            padding: 5px 0; /* Reduced padding */
-            position: fixed;
+            padding: 15px 0;
+            position: relative;
             width: 100%;
             bottom: 0;
         }
-        @media(max-width: 768px) {
+        @media(max-width: 992px) {
             .app {
-                flex: 1 1 calc(50% - 40px);
+                flex: 1 1 calc(45% - 40px);
+                max-width: calc(45% - 40px);
             }
         }
-        @media(max-width: 480px) {
+        @media(max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
             .app {
-                flex: 1 1 100%;
+                flex: 1 1 calc(100% - 40px);
+                max-width: calc(100% - 40px);
+            }
+            header {
+                padding: 30px 0;
             }
         }
         #contact {
-            padding-bottom: 50px; /* Adjust padding to ensure email is visible */
+            padding-bottom: 50px;
         }
         .contact-space {
-            margin-bottom: 20px; /* Space between contact section and footer */
+            margin-bottom: 20px;
+        }
+        a {
+            color: #006666;
+        }
+        a:hover {
+            color: #00cc99;
         }
     </style>
 </head>
@@ -108,7 +158,7 @@
     <div class="app-list">
         <div class="app">
             <h3>Plan to Retire</h3>
-            <img src="PlantoRetireNew.jpeg" alt="Plan to Retire Icon" style="width:150px; height:150px;">
+            <img src="PlantoRetireNew.jpeg" alt="Plan to Retire Icon">
             <p>Take control of your financial future. Plan to Retire is your personal financial planner, helping you map out your retirement with confidence. With simple input options, you can calculate the potential return on investment for your retirement savings based on contribution rates, growth projections, and more. Secure your future today, effortlessly.</p>
             <p><strong>Features:</strong></p>
             <ul>
@@ -119,7 +169,7 @@
         </div>
         <div class="app">
             <h3>Clear Costs</h3>
-            <img src="MinimalClearCosts.jpeg" alt="Clear Costs Icon" style="width:150px; height:150px;">
+            <img src="MinimalClearCosts.jpeg" alt="Clear Costs Icon">
             <p>Master your budget, effortlessly. Clear Costs is your go-to app for tracking expenses and managing your personal finances. Whether you’re working towards savings goals or simply want to get a better handle on your daily spending, Clear Costs gives you the insights you need to optimize your financial health.</p>
             <p><strong>Features:</strong></p>
             <ul>
@@ -130,7 +180,7 @@
         </div>
         <div class="app">
             <h3>Watch Fido</h3>
-            <img src="watch-fido_resized.jpeg" alt="Watch Fido Icon" style="width:150px; height:150px;">
+            <img src="watch-fido_resized.jpeg" alt="Watch Fido Icon">
             <p>Because your pet deserves the best care. Watch Fido helps you stay on top of your pet's health and wellness. From managing vet appointments to tracking medications and vaccinations, this app keeps everything you need in one place so you can focus on keeping your pet happy and healthy.</p>
             <p><strong>Features:</strong></p>
             <ul>
@@ -154,4 +204,5 @@
 
 </body>
 </html>
+
 
